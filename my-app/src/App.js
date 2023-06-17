@@ -7,7 +7,10 @@ function App() {
   const handleInputChange = (event) => {
     setMarkdown(event.target.value);
   };
-  
+  const getMarkdownText = () => {
+    return { __html: marked(markdown) };
+  };
+
 }
 
 export default App;
