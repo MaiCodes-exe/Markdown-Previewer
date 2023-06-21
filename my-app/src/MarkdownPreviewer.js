@@ -3,32 +3,35 @@ import React,  {useState} from  'react';
 
 import marked from 'marked';
 
-
-function App() {
+const MarkdownPreviewer = () => {
   const [markdown, setMarkdown] = useState('');
+
   const handleInputChange = (event) => {
     setMarkdown(event.target.value);
   };
+
   const getMarkdownText = () => {
-    return { __html: marked(markdown) };
+    const rawMarkup = marked(markdown, { sanitize: true });
+    return { __html: rawMarkup };
   };
 
   return (
-    <div className="App">
-      <div className="input-container">
+    <div>
+      <h2>Markdown Previewer</h2>
+      <div>
         <textarea
-          id="markdown-input"
+          rows="10"
+          cols="50"
           value={markdown}
           onChange={handleInputChange}
         ></textarea>
       </div>
-      <div
-        id="markdown-preview"
-        className="preview-container"
-        dangerouslySetInnerHTML={getMarkdownText()}
-      ></div>
+      <div>
+        <h3>Preview</h3>
+        <div dangerouslySetInnerHTML={getMarkdownText()} />
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+export default MarkdownPreviewer;
