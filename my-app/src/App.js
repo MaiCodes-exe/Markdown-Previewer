@@ -1,5 +1,5 @@
 import React from 'react';
-import MarkdownPreviewer from './MarkdownPreviewer';
+import  {MarkdownPreviewer} from './MarkdownPreviewer';
 
 const App = () => {
   return (
