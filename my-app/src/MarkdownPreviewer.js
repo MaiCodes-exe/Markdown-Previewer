@@ -1,5 +1,7 @@
 import './App.css'; 
 import React,  {useState} from  'react';
+import Container from '@mui/material/Button';
+
 
 import {marked} from 'marked';
 
@@ -26,10 +28,10 @@ const MarkdownPreviewer = () => {
           onChange={handleInputChange}
         ></textarea>
       </div>
-      <div>
+      <Container>
         <h3>Preview</h3>
         <div dangerouslySetInnerHTML={getMarkdownText()} />
-      </div>
+      </Container>
     </div>
   );
 };
