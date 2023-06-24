@@ -28,7 +28,7 @@ const MarkdownPreviewer = () => {
           onChange={handleInputChange}
         ></textarea>
       </div>
-      <Container>
+      <Container color='primary'>
         <h3>Preview</h3>
         <div dangerouslySetInnerHTML={getMarkdownText()} />
       </Container>
