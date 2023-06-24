@@ -28,10 +28,12 @@ const MarkdownPreviewer = () => {
           onChange={handleInputChange}
         ></textarea>
       </div>
-      <Container color='primary'>
+      <div>
         <h3>Preview</h3>
+        <Container color='primary'>
         <div dangerouslySetInnerHTML={getMarkdownText()} />
       </Container>
+      </div>
     </div>
   );
 };
