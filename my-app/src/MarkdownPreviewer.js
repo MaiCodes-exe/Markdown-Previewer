@@ -29,7 +29,11 @@ const MarkdownPreviewer = () => {
       </div>
       <div>
         <h3>Preview</h3>
-        <Container fixed color='primary'>
+        <Container fixed  sx={{
+        width: 500,
+        height: 300,
+        backgroundColor: 'primary.dark'
+      }}>
         <div dangerouslySetInnerHTML={getMarkdownText()} />
       </Container>
       </div>
