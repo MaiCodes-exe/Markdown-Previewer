@@ -2,7 +2,6 @@ import './App.css';
 import React,  {useState} from  'react';
 import Container from '@mui/material/Button';
 
-
 import {marked} from 'marked';
 
 const MarkdownPreviewer = () => {
@@ -30,7 +29,7 @@ const MarkdownPreviewer = () => {
       </div>
       <div>
         <h3>Preview</h3>
-        <Container color='primary'>
+        <Container fixed color='primary'>
         <div dangerouslySetInnerHTML={getMarkdownText()} />
       </Container>
       </div>
