@@ -20,13 +20,10 @@ const MarkdownPreviewer = () => {
       <h2>Markdown Previewer</h2>
       <Container
       sx={{
-        width: 300,
+        width: 400,
         height: 300,
-        backgroundColor: 'primary.dark',
-        '&:hover': {
-          backgroundColor: 'primary.main',
-          opacity: [0.9, 0.8, 0.7],
-        },
+        backgroundColor: 'primary.dark'
+      
       }}
     >
       <div>
@@ -37,15 +34,22 @@ const MarkdownPreviewer = () => {
           onChange={handleInputChange}
         ></textarea>
       </div>
- 
+      </Container>
+
       <div>
+      <Container sx={{
+        width: 400,
+        height: 300,
+        backgroundColor: 'primary.dark'
+      
+      }}>
         <h3>Preview</h3>
 
         <div id='preview'>
         <div dangerouslySetInnerHTML={getMarkdownText()} />
         </div>
-      </div>
       </Container>
+      </div>
     </div>
   );
 };
