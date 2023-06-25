@@ -19,11 +19,7 @@ const MarkdownPreviewer = () => {
   return (
     <div>
       <h2>Markdown Previewer</h2>
-      <Container fixed  sx={{
-        width: 500,
-        height: 300,
-        backgroundColor: 'primary.dark'
-      }}>
+
       <div>
         <textarea
           rows="10"
@@ -32,17 +28,12 @@ const MarkdownPreviewer = () => {
           onChange={handleInputChange}
         ></textarea>
       </div>
-      </Container>
       <div>
         <h3>Preview</h3>
-        <Container sx={{
-        width: 500,
-        height: 300,
-      }}>
+
         <div id='preview'>
         <div dangerouslySetInnerHTML={getMarkdownText()} />
         </div>
-        </Container>
       </div>
     </div>
   );
