@@ -1,6 +1,6 @@
 import './App.css'; 
 import React,  {useState} from  'react';
-import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import {marked} from 'marked';
 
 const MarkdownPreviewer = () => {
@@ -18,7 +18,7 @@ const MarkdownPreviewer = () => {
   return (
     <div>
       <h2>Markdown Previewer</h2>
-      <Box
+      <Container
       sx={{
         width: 300,
         height: 300,
@@ -45,7 +45,7 @@ const MarkdownPreviewer = () => {
         <div dangerouslySetInnerHTML={getMarkdownText()} />
         </div>
       </div>
-      </Box>
+      </Container>
     </div>
   );
 };
