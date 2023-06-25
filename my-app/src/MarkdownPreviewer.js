@@ -1,6 +1,6 @@
 import './App.css'; 
 import React,  {useState} from  'react';
-import Container from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 
 import {marked} from 'marked';
 
@@ -19,8 +19,10 @@ const MarkdownPreviewer = () => {
   return (
     <div>
       <h2>Markdown Previewer</h2>
+      <Stack spacing={2}>
 
       <div>
+
         <textarea
           rows="10"
           cols="50"
@@ -35,6 +37,7 @@ const MarkdownPreviewer = () => {
         <div dangerouslySetInnerHTML={getMarkdownText()} />
         </div>
       </div>
+      </Stack>
     </div>
   );
 };
