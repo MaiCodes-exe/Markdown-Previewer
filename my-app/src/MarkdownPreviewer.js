@@ -20,9 +20,8 @@ const MarkdownPreviewer = () => {
     <div>
       <h2>Markdown Previewer</h2>
       <Stack spacing={2}>
-
+      <Item>
       <div>
-
         <textarea
           rows="10"
           cols="50"
@@ -30,6 +29,8 @@ const MarkdownPreviewer = () => {
           onChange={handleInputChange}
         ></textarea>
       </div>
+      </Item>
+      <Item>
       <div>
         <h3>Preview</h3>
 
@@ -37,6 +38,7 @@ const MarkdownPreviewer = () => {
         <div dangerouslySetInnerHTML={getMarkdownText()} />
         </div>
       </div>
+      </Item>
       </Stack>
     </div>
   );
