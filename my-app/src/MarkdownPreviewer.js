@@ -1,6 +1,6 @@
 import './App.css'; 
 import React,  {useState} from  'react';
-
+import Box from '@mui/material/Box';
 import {marked} from 'marked';
 
 const MarkdownPreviewer = () => {
@@ -18,7 +18,17 @@ const MarkdownPreviewer = () => {
   return (
     <div>
       <h2>Markdown Previewer</h2>
-
+      <Box
+      sx={{
+        width: 300,
+        height: 300,
+        backgroundColor: 'primary.dark',
+        '&:hover': {
+          backgroundColor: 'primary.main',
+          opacity: [0.9, 0.8, 0.7],
+        },
+      }}
+    >
       <div>
         <textarea
           rows="10"
@@ -35,7 +45,7 @@ const MarkdownPreviewer = () => {
         <div dangerouslySetInnerHTML={getMarkdownText()} />
         </div>
       </div>
-
+      </Box>
     </div>
   );
 };
