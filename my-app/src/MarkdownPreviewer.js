@@ -34,11 +34,11 @@ const MarkdownPreviewer = () => {
       </div>
       </Container>
       <div>
+        <h3>Preview</h3>
         <Container sx={{
         width: 500,
         height: 300,
       }}>
-        <h3>Preview</h3>
         <div id='preview'>
         <div dangerouslySetInnerHTML={getMarkdownText()} />
         </div>
