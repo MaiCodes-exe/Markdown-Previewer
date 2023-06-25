@@ -33,10 +33,12 @@ const MarkdownPreviewer = () => {
         ></textarea>
       </div>
       <div>
+        <Container>
         <h3>Preview</h3>
         <div>
         <div dangerouslySetInnerHTML={getMarkdownText()} />
         </div>
+        </Container>
       </div>
       </Container>
     </div>
