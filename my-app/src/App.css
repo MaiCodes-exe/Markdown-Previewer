@@ -14,7 +14,7 @@ margin: auto;
 background-color:white;
 margin-top: auto;
 display: flex;
-/* position: absolute; */
+position: relative;
 align-self: center;
 justify-content: center;
 
