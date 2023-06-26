@@ -1,6 +1,7 @@
 #title{
-  align-self: center;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;}
 
 
 #preview{
@@ -10,10 +11,11 @@ position: fixed;
 }
 #textbox{
 margin: auto;
-background-color:black;
-margin-top: 5%;
+background-color:white;
+margin-top: auto;
 display: flex;
-width: max-content;
-position: absolute;
+/* position: absolute; */
+align-self: center;
+justify-content: center;
 
 }
