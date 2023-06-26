@@ -38,8 +38,10 @@ const MarkdownPreviewer = () => {
         width: 500,
         height: 300,
       }}>
-        <h3>Preview</h3>
         <div id='preview'>
+        <h3>Preview</h3>
+        </div>
+        <div>
         <div id="textbox" dangerouslySetInnerHTML={getMarkdownText()} />
         </div>
         </Container>

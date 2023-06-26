@@ -1,10 +1,12 @@
 #preview{
-  background-color:black;
   margin-top: 5px;
 display: flex;
+position: fixed;
 
 }
 #textbox{
 margin: auto;
+background-color:black;
+margin-top: 30px;
 
 }
