@@ -32,6 +32,7 @@ const MarkdownPreviewer = () => {
           onChange={handleInputChange}
         ></textarea>
       </div>
+      </Container>
       <div>
         <Container>
         <h3>Preview</h3>
@@ -40,7 +41,6 @@ const MarkdownPreviewer = () => {
         </div>
         </Container>
       </div>
-      </Container>
     </div>
   );
 };
