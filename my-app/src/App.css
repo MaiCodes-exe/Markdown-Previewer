@@ -1,6 +1,9 @@
 #preview{
-  background-color:white;
-
+  background-color:black;
+  margin-top: 5px;
+display: flex;
+width: 500px;
+height: 300px;
 }
 #textbox{
 margin: auto;
