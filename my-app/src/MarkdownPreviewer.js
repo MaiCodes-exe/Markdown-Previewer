@@ -17,9 +17,10 @@ const MarkdownPreviewer = () => {
   };
 
   return (
-    <div id="tile">
-      <h2>Markdown Previewer</h2>
-      <Container fixed  sx={{
+    <div>
+      <h2  id="title">Markdown Previewer</h2>
+      <div id="title"> 
+      <Container fixed sx={{
         width: 500,
         height: 300,
         backgroundColor: 'primary.dark'
@@ -33,7 +34,8 @@ const MarkdownPreviewer = () => {
         ></textarea>
       </div>
       </Container>
-      <div>
+      </div>
+      <div id="title">
         <Container sx={{
         width: 500,
         height: 300,
