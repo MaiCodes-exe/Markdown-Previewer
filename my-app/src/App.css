@@ -1,5 +1,9 @@
+#title{
+  align-self: center;
+}
+
+
 #preview{
-  margin-top: 5px;
 display: flex;
 position: fixed;
 

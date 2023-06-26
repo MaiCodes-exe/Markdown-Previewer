@@ -17,7 +17,7 @@ const MarkdownPreviewer = () => {
   };
 
   return (
-    <div>
+    <div id="tile">
       <h2>Markdown Previewer</h2>
       <Container fixed  sx={{
         width: 500,
@@ -37,7 +37,7 @@ const MarkdownPreviewer = () => {
         <Container sx={{
         width: 500,
         height: 300,
-      }}>
+      }} spacing={30}>
         <div id='preview'>
         <h3>Preview</h3>
         </div>
